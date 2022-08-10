@@ -1,0 +1,21 @@
+version: 2
+exposures:
+  
+  - name: Dbt_exposure
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+      Checking how exposure works with dbt
+    
+    depends_on:
+      - ref('converted_user')
+      - ref('converted_users_from_califonia')
+      - ref('converted_users_from_califonia_tasking_room_ALEXANDER_VALLEY')
+      - ref('converted_users_from_califonia_tasking_room_SONOMA_VALLEY')
+      - ref('converted_users_from_califonia_tasking_room_Russian_river_valley')
+      - ref('converted_users_from_califonia_tasking_room_Napa_Valley')
+      
+    owner:
+      name: Abhishek Zankyani
+      email: abhishek.zankyani@techment.com
